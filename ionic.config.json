@@ -1,0 +1,7 @@
+{
+  "name": "diseño pagina",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

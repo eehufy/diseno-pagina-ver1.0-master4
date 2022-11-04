@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-toolbar color="medium">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      login
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button [routerLink]="['/home']" color="secondary" >Home
+        <ion-icon slot="icon-only" name="people-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+    <ion-card>
+      <ion-card-header collapse="condense">
+        <ion-card-title>
+          Login
+        </ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <form [formGroup]="formularioLogin" action="">
+          <ion-item>
+            <ion-label position = "floating"> Rut </ion-label>
+            <ion-input > </ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position = "floating"> Contraseña </ion-label>
+            <ion-input type="password"></ion-input>
+          </ion-item>
+        </form>
+        <br>
+        <ion-button (click)="ingresar()">
+          ingresar
+        </ion-button>
+      </ion-card-content>
+    </ion-card>
+<h3>Registro, solo para pruebas de ingreso</h3>
+<ion-footer>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="end">
+      <ion-button [routerLink]="['/registro']" color="secondary">Registrarse
+        
+      </ion-button><ion-icon slot="icon-only" name="people-outline"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
+<ion-footer>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="end">
+      <ion-button [routerLink]="['/cambiocontra']" color="secondary">Cambio contraseña
+        
+      </ion-button><ion-icon slot="icon-only" name="people-outline"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
+
+
+</ion-content>
+
+
+
+
+
+
+
+
+
+
+
